@@ -1,0 +1,25 @@
+{%extends 'index.html'%}
+{% block content%}
+        <form method="POST">
+            {% csrf_token%}
+            <table>
+                <tr>
+                    <td>
+                        <label for="uername">UserName</label>
+                    </td>
+                    <td>
+                        <input type="text" name="username" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>
+                        <input type="text" name="password" id="username">
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Login</button>
+        </form>
+{%endblock%}
